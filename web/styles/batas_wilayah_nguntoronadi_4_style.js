@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_batas_wilayah_nguntoronadi_5 = function(feature, resolution){
+var style_batas_wilayah_nguntoronadi_4 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -23,7 +23,7 @@ var style_batas_wilayah_nguntoronadi_5 = function(feature, resolution){
         labelText = String("");
     }
     var style = [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(173,153,72,0.94)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 3.6479999999999997}),
+        stroke: new ol.style.Stroke({color: 'rgba(215,16,199,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 3.6479999999999997}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
