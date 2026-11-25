@@ -46,7 +46,7 @@
         <script>
         var map = L.map('map', {
             zoomControl:false, maxZoom:28, minZoom:1
-        }).fitBounds([[-7.91613520330391,110.92129177492212],[-7.869072240245102,110.9800313443459]]);
+        }).fitBounds([[-7.899603948758454,110.87120367601428],[-7.84482877777657,111.02505136269257]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/qgis2web/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -250,7 +250,7 @@
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(196,60,57,1.0)',
-                interactive: true,
+                interactive: false,
             }
         }
         map.createPane('pane_2026_bencana_6');
@@ -258,7 +258,7 @@
         map.getPane('pane_2026_bencana_6').style['mix-blend-mode'] = 'normal';
         var layer_2026_bencana_6 = new L.geoJson(json_2026_bencana_6, {
             attribution: '',
-            interactive: true,
+            interactive: false,
             dataVar: 'json_2026_bencana_6',
             layerName: 'layer_2026_bencana_6',
             pane: 'pane_2026_bencana_6',
@@ -323,15 +323,15 @@
             return {
                 pane: 'pane_2026_kekeringan_7',
                 opacity: 1,
-                color: 'rgba(35,35,35,1.0)',
+                color: 'rgba(35,35,35,0.375)',
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(255,202,9,1.0)',
-                interactive: true,
+                fillColor: 'rgba(255,202,9,0.375)',
+                interactive: false,
             }
         }
         map.createPane('pane_2026_kekeringan_7');
@@ -339,7 +339,7 @@
         map.getPane('pane_2026_kekeringan_7').style['mix-blend-mode'] = 'normal';
         var layer_2026_kekeringan_7 = new L.geoJson(json_2026_kekeringan_7, {
             attribution: '',
-            interactive: true,
+            interactive: false,
             dataVar: 'json_2026_kekeringan_7',
             layerName: 'layer_2026_kekeringan_7',
             pane: 'pane_2026_kekeringan_7',
@@ -398,15 +398,15 @@
             return {
                 pane: 'pane_2026_kebakaran_hutan_8',
                 opacity: 1,
-                color: 'rgba(255,1,111,0.375)',
+                color: 'rgba(255,1,111,0.33799999999999997)',
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(255,59,5,0.375)',
-                interactive: true,
+                fillColor: 'rgba(255,59,5,0.33799999999999997)',
+                interactive: false,
             }
         }
         map.createPane('pane_2026_kebakaran_hutan_8');
@@ -414,7 +414,7 @@
         map.getPane('pane_2026_kebakaran_hutan_8').style['mix-blend-mode'] = 'normal';
         var layer_2026_kebakaran_hutan_8 = new L.geoJson(json_2026_kebakaran_hutan_8, {
             attribution: '',
-            interactive: true,
+            interactive: false,
             dataVar: 'json_2026_kebakaran_hutan_8',
             layerName: 'layer_2026_kebakaran_hutan_8',
             pane: 'pane_2026_kebakaran_hutan_8',
@@ -482,7 +482,7 @@
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(213,180,60,1.0)',
-                interactive: true,
+                interactive: false,
             }
         }
         map.createPane('pane_2026_lokasi_sumur_bor_9');
@@ -490,7 +490,7 @@
         map.getPane('pane_2026_lokasi_sumur_bor_9').style['mix-blend-mode'] = 'normal';
         var layer_2026_lokasi_sumur_bor_9 = new L.geoJson(json_2026_lokasi_sumur_bor_9, {
             attribution: '',
-            interactive: true,
+            interactive: false,
             dataVar: 'json_2026_lokasi_sumur_bor_9',
             layerName: 'layer_2026_lokasi_sumur_bor_9',
             pane: 'pane_2026_lokasi_sumur_bor_9',
@@ -555,15 +555,15 @@
             return {
                 pane: 'pane_2026_sumur_bor_10',
                 opacity: 1,
-                color: 'rgba(35,35,35,1.0)',
+                color: 'rgba(4,241,217,0.201)',
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(243,166,178,1.0)',
-                interactive: true,
+                fillColor: 'rgba(0,0,255,0.201)',
+                interactive: false,
             }
         }
         map.createPane('pane_2026_sumur_bor_10');
@@ -571,7 +571,7 @@
         map.getPane('pane_2026_sumur_bor_10').style['mix-blend-mode'] = 'normal';
         var layer_2026_sumur_bor_10 = new L.geoJson(json_2026_sumur_bor_10, {
             attribution: '',
-            interactive: true,
+            interactive: false,
             dataVar: 'json_2026_sumur_bor_10',
             layerName: 'layer_2026_sumur_bor_10',
             pane: 'pane_2026_sumur_bor_10',
@@ -655,7 +655,7 @@
                         <td colspan="2">' + (feature.properties['WADMPR'] !== null ? autolinker.link(String(feature.properties['WADMPR']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['WIADKC'] !== null ? autolinker.link(String(feature.properties['WIADKC']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <td colspan="2"><strong>WIADKC</strong><br />' + (feature.properties['WIADKC'] !== null ? autolinker.link(String(feature.properties['WIADKC']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['WIADKD'] !== null ? autolinker.link(String(feature.properties['WIADKD']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -684,7 +684,7 @@
                 lineJoin: 'bevel',
                 weight: 1.0,
                 fillOpacity: 0,
-                interactive: true,
+                interactive: false,
             }
         }
         map.createPane('pane_batas_desa_11');
@@ -692,7 +692,7 @@
         map.getPane('pane_batas_desa_11').style['mix-blend-mode'] = 'normal';
         var layer_batas_desa_11 = new L.geoJson(json_batas_desa_11, {
             attribution: '',
-            interactive: true,
+            interactive: false,
             dataVar: 'json_batas_desa_11',
             layerName: 'layer_batas_desa_11',
             pane: 'pane_batas_desa_11',
@@ -701,6 +701,59 @@
         });
         bounds_group.addLayer(layer_batas_desa_11);
         map.addLayer(layer_batas_desa_11);
+        const url = {"Nominatim OSM": "https://nominatim.openstreetmap.org/search?format=geojson&addressdetails=1&",
+        "France BAN": "https://api-adresse.data.gouv.fr/search/?"}
+        var photonControl = L.control.photon({
+            url: url["Nominatim OSM"],
+            feedbackLabel: '',
+            position: 'topleft',
+            includePosition: true,
+            initial: true,
+            // resultsHandler: myHandler,
+        }).addTo(map);
+        photonControl._container.childNodes[0].style.borderRadius="10px"
+        // Create a variable to store the geoJSON data
+        var x = null;
+        // Create a variable to store the marker
+        var marker = null;
+        // Add an event listener to the Photon control to create a marker from the returned geoJSON data
+        var z = null;
+        photonControl.on('selected', function(e) {
+            console.log(photonControl.search.resultsContainer);
+            if (x != null) {
+                map.removeLayer(obj3.marker);
+                map.removeLayer(x);
+            }
+            obj2.gcd = e.choice;
+            x = L.geoJSON(obj2.gcd).addTo(map);
+            var label = typeof obj2.gcd.properties.label === 'undefined' ? obj2.gcd.properties.display_name : obj2.gcd.properties.label;
+            obj3.marker = L.marker(x.getLayers()[0].getLatLng()).bindPopup(label).addTo(map);
+            map.setView(x.getLayers()[0].getLatLng(), 17);
+            z = typeof e.choice.properties.label === 'undefined'? e.choice.properties.display_name : e.choice.properties.label;
+            console.log(e);
+            e.target.input.value = z;
+        });
+        var search = document.getElementsByClassName("leaflet-photon leaflet-control")[0];
+        search.classList.add("leaflet-control-search")
+        search.style.display = "flex";
+        search.style.backgroundColor="rgba(255,255,255,0.5)" 
+
+        // Create the new button element
+        var button = document.createElement("div");
+        button.id = "gcd-button-control";
+        button.className = "gcd-gl-btn fa fa-search search-button";
+
+        // Insert the button at the beginning of the search control
+        search.insertBefore(button, search.firstChild);
+        last = search.lastChild;
+        last.style.display = "none";
+        button.addEventListener("click", function (e) {
+            if (last.style.display === "none") {
+                last.style.display = "block";
+            } else {
+                last.style.display = "none";
+            }
+        });
         var overlaysTree = [
             {label: '<img src="legend/batas_desa_11.png" /> batas_desa', layer: layer_batas_desa_11},
             {label: '<img src="legend/2026_sumur_bor_10.png" /> 2026_sumur_bor', layer: layer_2026_sumur_bor_10},
